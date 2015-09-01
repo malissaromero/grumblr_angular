@@ -24,3 +24,11 @@ textarea {
   padding: 1em;
   margin: 1em;
 }
+
+.delete{
+  cursor: pointer;
+}
+
+img{
+  max-width:100%;
+}

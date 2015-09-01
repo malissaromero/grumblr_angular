@@ -17,7 +17,7 @@
   <div ng-controller="grumblesController as grumblesCtrl">
     <div class="grumbles" ng-repeat="grumble in grumblesCtrl.grumbles">
       <div class="grumble">
-        <h2>{{ grumble.title }} <span class='delete'>(X)</span></h2>
+        <h2>{{ grumble.title }} <span class='delete' ng-click="grumblesCtrl.delete($index)">(X)</span></h2>
         by: {{ grumble.authorName }}
         <p>
           {{ grumble.content }}
