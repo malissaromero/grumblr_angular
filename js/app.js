@@ -1,7 +1,19 @@
 'use strict';
 
 (function() {
-  var app = angular.module('grumblr', [
+  angular.module('grumbleControllers', [
+    'ngRoute'
+  ]);
+
+  angular.module('grumbleDirectives', [
+
+  ]);
+
+  angular.module('grumbleServices', [
+    'ngResource'
+  ]);
+
+  angular.module('grumblr', [
     'ngRoute',
     'firebase',
     'ngResource',
