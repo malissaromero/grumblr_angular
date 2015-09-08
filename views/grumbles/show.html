@@ -1,10 +1,2 @@
-<div class="grumble">
-  <h2><a ng-href="/#/grumbles/{{grumble.$id}}">{{ grumble.title }}</a></h2>
-  <p ng-if="grumbleCtrl.delete">
-    <button type="button" class='delete' ng-click="grumbleCtrl.delete(grumble.$id)">Delete</button>
-    <a ng-href="/#/grumbles/{{grumble.$id}}/edit"><button type="button">Edit</button></a>
-  </p>
-  <p>by: {{ grumble.authorName }}</p>
-  <p>{{ grumble.content }}</p>
-  <img ng-src="{{ grumble.photoUrl }}" alt="{{ grumble.title }}" />
-</div>
+<grumble-show data-grumble="vm.grumble" data-vm="vm" />
+<p>Comments go here</p>

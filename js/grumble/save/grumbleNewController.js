@@ -8,9 +8,9 @@
     ]);
 
   function newGrumbleController($location, Grumble){
-    this.create = function(){
-      var self = this
-      Grumble.create(this.grumble, function(id) {
+    var vm = this;
+    vm.save = function(){
+      Grumble.create(vm.grumble, function(id) {
         $location.path("/grumbles/" + id);
       })
     }

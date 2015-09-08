@@ -8,22 +8,22 @@
         .when("/grumbles", {
           templateUrl: 'views/grumbles/index.html',
           controller: 'grumblesController',
-          controllerAs: 'grumblesCtrl'
+          controllerAs: 'vm'
         })
         .when("/grumbles/new", {
           templateUrl: 'views/grumbles/edit.html',
           controller: 'newGrumbleController',
-          controllerAs: 'newGrumbleCtrl'
+          controllerAs: 'vm'
         })
         .when("/grumbles/:id", {
           templateUrl: 'views/grumbles/show.html',
           controller: 'showGrumbleController',
-          controllerAs: 'grumbleCtrl'
+          controllerAs: 'vm'
         })
         .when("/grumbles/:id/edit", {
           templateUrl: 'views/grumbles/edit.html',
           controller: 'editGrumbleController',
-          controllerAs: 'grumbleCtrl'
+          controllerAs: 'vm'
         })
         .otherwise({
           redirectTo: "/grumbles"

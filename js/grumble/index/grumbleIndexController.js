@@ -4,8 +4,8 @@
     .controller('grumblesController', ['grumbleFactory', grumblesController]);
 
   function grumblesController(grumbleFactory){
-    var self = this;
-    self.grumbles = grumbleFactory.all;
-    return self;
+    var vm = this;
+    vm.grumbles = grumbleFactory.all;
+    return vm;
   }
 })();
