@@ -3,9 +3,9 @@
     .module('grumbleControllers')
     .controller('grumblesController', ['grumbleFactory', grumblesController]);
 
-  function grumblesController(Grumble){
+  function grumblesController(grumbleFactory){
     var self = this;
-    self.grumbles = Grumble.all;
+    self.grumbles = grumbleFactory.all;
     return self;
   }
 })();

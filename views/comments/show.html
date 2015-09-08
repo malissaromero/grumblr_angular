@@ -1,0 +1,7 @@
+<ul ng-repeat="comment in grumbleCtrl.grumble.comments | orderBy:'-created_at'">
+  <li>
+    <strong>{{comment.authorName}}</strong>
+    <small>{{comment.created_at}}</small><br>
+    {{comment.content}}
+  </li>
+</div>

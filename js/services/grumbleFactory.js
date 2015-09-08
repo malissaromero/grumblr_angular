@@ -8,18 +8,19 @@
     var grumbles = $firebaseArray(ref)
     var Grumble = {
       all: grumbles,
-      create: function( grumble, cb ){
+      create: function( grumble, callback ){
         grumbles.$add(grumble).then(function(ref) {
       	  var id = ref.key();
-      	  cb(id)
+      	  callback(id)
       	})
       },
-      get: function (grumble, cb) {
-      	var found = $firebaseObject(ref.child(grumble.id));
-      	if(typeof cb == "function") cb(found)
+      get: function (grumble, callback) {
+        var child = ref.child(grumble.id);
+      	var found = $firebaseObject(child);
+      	if(typeof callback == "function") callback(found)
         return found
       },
-      delete: function(grumble, cb){
+      delete: function(grumble, callback){
 	      return grumbles.$remove(grumbles.$getRecord(grumble.id))
       }
     }

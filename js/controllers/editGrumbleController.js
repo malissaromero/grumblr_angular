@@ -2,18 +2,20 @@
 angular
   .module('grumbleControllers')
   .controller('editGrumbleController', [
+    "$scope",
     "$location",
     "$routeParams",
-    'grumbleFactory',
+    "grumbleFactory",
     editGrumbleController
   ]);
 
 
-  function editGrumbleController($location, $routeParams, Grumble){
-    this.grumble = Grumble.get({id: $routeParams.id})
+  function editGrumbleController($scope, $location, $routeParams, Grumble){
+    var grumble = Grumble.get({id: $routeParams.id});
+    $scope.grumble = grumble;
     this.update = function(){
-      this.grumble.$save();
-      $location.path("/grumbles/" + this.grumble.$id)
+      grumble.$save();
+      $location.path("/grumbles/" + grumble.$id)
     }
   }
 })();

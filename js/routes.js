@@ -11,13 +11,13 @@
           controllerAs: 'grumblesCtrl'
         })
         .when("/grumbles/new", {
-          templateUrl: 'views/grumbles/new.html',
+          templateUrl: 'views/grumbles/edit.html',
           controller: 'newGrumbleController',
           controllerAs: 'newGrumbleCtrl'
         })
         .when("/grumbles/:id", {
           templateUrl: 'views/grumbles/show.html',
-          controller: 'grumbleController',
+          controller: 'showGrumbleController',
           controllerAs: 'grumbleCtrl'
         })
         .when("/grumbles/:id/edit", {

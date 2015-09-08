@@ -1,7 +1,11 @@
 (function(){
   angular
     .module('grumbleControllers')
-    .controller('newGrumbleController', ["$location", 'grumbleFactory', newGrumbleController]);
+    .controller('newGrumbleController', [
+      "$location",
+      "grumbleFactory",
+      newGrumbleController
+    ]);
 
   function newGrumbleController($location, Grumble){
     this.create = function(){
