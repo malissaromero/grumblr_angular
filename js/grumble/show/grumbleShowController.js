@@ -1,16 +1,16 @@
 (function(){
   angular
     .module('grumblr')
-    .controller('showGrumbleController', [
+    .controller('grumbleShowController', [
       '$routeParams',
       '$location',
       '$http',
       'grumbleFactory',
       'commentFactory',
-      showGrumbleController
+      grumbleShowController
     ]);
 
-  function showGrumbleController($routeParams, $location, $http, Grumble, Comment){
+  function grumbleShowController($routeParams, $location, $http, Grumble, Comment){
     var vm = this;
     vm.grumble = Grumble.get({id: $routeParams.id});
     vm.comments = [{authorName: "John Smith", content: "thing1"}, {authorName: "Tony the Pony", content: "thing2"}]

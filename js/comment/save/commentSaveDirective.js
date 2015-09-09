@@ -4,7 +4,10 @@
     .directive('commentSave', function(){
       return {
         templateUrl: "js/comment/save/commentSaveView.html",
-        replace: true
+        replace: true,
+        scope: {
+          grumble: "="
+        }
       }
     });
 })();

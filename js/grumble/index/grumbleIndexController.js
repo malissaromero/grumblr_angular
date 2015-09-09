@@ -1,9 +1,9 @@
 (function() {
   angular
     .module('grumblr')
-    .controller('grumblesController', ['grumbleFactory', grumblesController]);
+    .controller('grumbleIndexController', ['grumbleFactory', grumbleIndexController]);
 
-  function grumblesController(grumbleFactory){
+  function grumbleIndexController(grumbleFactory){
     var vm = this;
     vm.grumbles = grumbleFactory.all;
     return vm;

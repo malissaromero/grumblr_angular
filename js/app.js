@@ -13,22 +13,22 @@
       $routeProvider
       .when("/grumbles", {
         templateUrl: 'views/grumbles/index.html',
-        controller: 'grumblesController',
+        controller: 'grumbleIndexController',
         controllerAs: 'vm'
       })
       .when("/grumbles/new", {
         templateUrl: 'views/grumbles/save.html',
-        controller: 'newGrumbleController',
+        controller: 'grumbleNewController',
         controllerAs: 'vm'
       })
       .when("/grumbles/:id", {
         templateUrl: 'views/grumbles/show.html',
-        controller: 'showGrumbleController',
+        controller: 'grumbleShowController',
         controllerAs: 'vm'
       })
       .when("/grumbles/:id/edit", {
         templateUrl: 'views/grumbles/save.html',
-        controller: 'editGrumbleController',
+        controller: 'grumbleEditController',
         controllerAs: 'vm'
       })
       .otherwise({

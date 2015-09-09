@@ -1,15 +1,15 @@
 (function(){
 angular
   .module('grumblr')
-  .controller('editGrumbleController', [
+  .controller('grumbleEditController', [
     "$location",
     "$routeParams",
     "grumbleFactory",
-    editGrumbleController
+    grumbleEditController
   ]);
 
 
-  function editGrumbleController($location, $routeParams, Grumble){
+  function grumbleEditController($location, $routeParams, Grumble){
     var vm = this;
     var grumble = Grumble.get({id: $routeParams.id});
     vm.grumble = grumble;

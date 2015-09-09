@@ -1,13 +1,13 @@
 (function(){
   angular
     .module('grumblr')
-    .controller('newGrumbleController', [
+    .controller('grumbleNewController', [
       "$location",
       "grumbleFactory",
-      newGrumbleController
+      grumbleNewController
     ]);
 
-  function newGrumbleController($location, Grumble){
+  function grumbleNewController($location, Grumble){
     var vm = this;
     vm.save = function(){
       Grumble.create(vm.grumble, function(id) {
