@@ -4,8 +4,6 @@
     .controller('grumbleIndexController', ['Grumble', grumbleIndexController]);
 
   function grumbleIndexController(Grumble){
-    var vm = this;
-    vm.grumbles = Grumble.all;
-    return vm;
+    this.grumbles = Grumble.all;
   }
 })();
