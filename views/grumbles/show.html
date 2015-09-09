@@ -1,2 +1,9 @@
-<grumble-show data-grumble="vm.grumble" data-vm="vm" />
-<p>Comments go here</p>
+<grumble-show data-grumble="vm.grumble" data-vm="vm"></grumble-show>
+<ul>
+  <li data-ng-repeat="comment in vm.comments">
+    <comment-show data-comment="comment"></comment-show>
+  </li>
+  <li>
+    <comment-save></comment-save>
+  </li>
+</ul>

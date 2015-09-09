@@ -1,5 +1,7 @@
-<html ng-app="grumblr">
+<!DOCTYPE html>
+<html data-ng-app="grumblr">
   <head>
+    <title>Grumblr</title>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
@@ -16,11 +18,16 @@
     <script src="js/grumble/save/grumbleEditController.js"></script>
     <script src="js/grumble/save/grumbleNewController.js"></script>
     <script src="js/grumble/save/grumbleSaveDirective.js"></script>
+
     <script src="js/comment/commentFactory.js"></script>
+    <script src="js/comment/save/commentNewController.js"></script>
+    <script src="js/comment/save/commentSaveDirective.js"></script>
+    <script src="js/comment/show/commentShowController.js"></script>
+    <script src="js/comment/show/commentShowDirective.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1><a ng-href="/#/grumbles">Grumblr</a></h1>
-    <div ng-view></div>
+    <h1><a data-ng-href="/#/grumbles">Grumblr</a></h1>
+    <div data-ng-view></div>
   </body>
 </html>

@@ -1,7 +1,6 @@
 'use strict';
 
 (function() {
-
   angular
   .module('grumblr', [
     'ngRoute',
@@ -18,7 +17,7 @@
         controllerAs: 'vm'
       })
       .when("/grumbles/new", {
-        templateUrl: 'views/grumbles/edit.html',
+        templateUrl: 'views/grumbles/save.html',
         controller: 'newGrumbleController',
         controllerAs: 'vm'
       })
@@ -28,7 +27,7 @@
         controllerAs: 'vm'
       })
       .when("/grumbles/:id/edit", {
-        templateUrl: 'views/grumbles/edit.html',
+        templateUrl: 'views/grumbles/save.html',
         controller: 'editGrumbleController',
         controllerAs: 'vm'
       })

@@ -1,7 +1,7 @@
 (function(){
   angular
     .module('grumblr')
-    .directive('grumbleEdit', function(){
+    .directive('grumbleSave', function(){
       return {
         templateUrl: "js/grumble/save/grumbleSaveView.html",
         replace: true,
