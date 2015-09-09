@@ -12,24 +12,18 @@
     function($routeProvider){
       $routeProvider
       .when("/grumbles", {
-        templateUrl: 'views/grumbles/index.html',
+        templateUrl: 'views/index.html',
         controller: 'grumbleIndexController',
         controllerAs: 'vm'
       })
       .when("/grumbles/new", {
-        templateUrl: 'views/grumbles/save.html',
-        controller: 'grumbleNewController',
-        controllerAs: 'vm'
+        templateUrl: 'views/save.html'
       })
       .when("/grumbles/:id", {
-        templateUrl: 'views/grumbles/show.html',
-        controller: 'grumbleShowController',
-        controllerAs: 'vm'
+        templateUrl: 'views/show.html'
       })
       .when("/grumbles/:id/edit", {
-        templateUrl: 'views/grumbles/save.html',
-        controller: 'grumbleEditController',
-        controllerAs: 'vm'
+        templateUrl: 'views/save.html'
       })
       .otherwise({
         redirectTo: "/grumbles"

@@ -1,27 +1,39 @@
 (function() {
   angular
     .module('grumblr')
-    .factory('grumbleFactory', ["$firebase", grumbleFactory]);
+    .factory('Grumble', [
+      "$location",
+      "$firebase",
+      Grumble
+    ]);
 
-  function grumbleFactory($firebase){
+  function Grumble($location, $firebase){
+    var factory = this;
     var grumbles = $firebase.data;
-    var Grumble = {
-      all: grumbles,
-      create: function( grumble, callback ){
-        grumbles.$add(grumble).then(function(response) {
-      	  var id = response.key();
-      	  callback(id);
-      	})
-      },
-      get: function (grumble, callback) {
-      	var found = $firebase.get(grumble.id);
-      	if(typeof callback == "function") callback(found);
-        return found;
-      },
-      delete: function(grumble, callback){
-	      return grumbles.$remove(grumbles.$getRecord(grumble.id));
+    factory.all = grumbles;
+    factory.new = function(grumble){
+      if(grumble.id) grumble.$id = grumble.id;
+      var methods = {
+        create: function(){
+          return $firebase.create(this).then(function(response){
+            grumble = response;
+            $location.path("/grumbles/" + response.key());
+          });
+        },
+        update: function(){
+          return $firebase.update(this).then(function(response){
+            $location.path("/grumbles/" + response.key());
+          });
+        },
+        destroy: function(){
+          return $firebase.destroy(this).then(function(){
+            $location.path("/grumbles");
+          });
+        }
       }
+      return $firebase.new(grumble.$id, methods);
     }
-    return Grumble
+
+    return factory;
   }
 })();

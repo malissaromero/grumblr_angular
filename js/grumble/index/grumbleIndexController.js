@@ -1,11 +1,11 @@
 (function() {
   angular
     .module('grumblr')
-    .controller('grumbleIndexController', ['grumbleFactory', grumbleIndexController]);
+    .controller('grumbleIndexController', ['Grumble', grumbleIndexController]);
 
-  function grumbleIndexController(grumbleFactory){
+  function grumbleIndexController(Grumble){
     var vm = this;
-    vm.grumbles = grumbleFactory.all;
+    vm.grumbles = Grumble.all;
     return vm;
   }
 })();

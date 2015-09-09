@@ -1,16 +1,22 @@
 (function(){
   angular
     .module('grumblr')
-    .directive('grumbleShow', grumbleShow);
+    .directive('grumbleShow', [
+      "$routeParams",
+      "Grumble",
+      grumbleShow
+    ]);
 
-  function grumbleShow(){
+  function grumbleShow($routeParams, Grumble){
     return {
       templateUrl: "js/grumble/show/grumbleShowView.html",
       restrict: "E",
       replace: true,
-      scope: {
-        grumble: "=",
-        vm: "="
+      link: function(scope, element, attributes){
+        if(!scope.grumble){
+          scope.grumble = Grumble.new({id: $routeParams.id})
+          scope.showButtons = true;
+        }
       }
     }
   }
