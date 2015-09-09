@@ -6,8 +6,9 @@
   * Recall that comments are a nested resource, so the path looks like:
     `/grumbles/:grumble_id/comments/:id`
   * Don't forget to load any new dependencies into your app.
-2. Since the comment functionality exists within the 'show' view, you don't
-   need any new views, routes, or controllers.
+2. Since comments exist only within the 'show' view, you can add the comment
+   functionality to the "grumble/show" controller. You don't need any new views,
+   routes, or controllers.
 3. You will need to update the appropriate grumble controller to fetch the
    comments for the current grumble.
   * Remember that the `Grumble.get` is async, so any actions that depend on the
