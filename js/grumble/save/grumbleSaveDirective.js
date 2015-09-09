@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('grumbleDirectives')
+    .module('grumblr')
     .directive('grumbleEdit', function(){
       return {
         templateUrl: "js/grumble/save/grumbleSaveView.html",

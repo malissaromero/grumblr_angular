@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('grumbleControllers')
+    .module('grumblr')
     .controller('grumblesController', ['grumbleFactory', grumblesController]);
 
   function grumblesController(grumbleFactory){

@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('grumbleServices')
+    .module('grumblr')
     .factory('grumbleFactory', ['$firebaseObject', '$firebaseArray', grumbleFactory]);
 
   function grumbleFactory($firebaseObject, $firebaseArray){

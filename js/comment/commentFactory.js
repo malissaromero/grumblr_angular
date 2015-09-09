@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('grumbleServices')
+    .module('grumblr')
     .factory('commentFactory', ['$resource', commentFactory]);
 
   function commentFactory($resource) {

@@ -1,6 +1,6 @@
 (function(){
 angular
-  .module('grumbleControllers')
+  .module('grumblr')
   .controller('editGrumbleController', [
     "$location",
     "$routeParams",

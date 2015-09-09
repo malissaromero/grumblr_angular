@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('grumbleDirectives')
+    .module('grumblr')
     .directive('grumbleShow', grumbleShow);
 
   function grumbleShow(){
