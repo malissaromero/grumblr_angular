@@ -4,7 +4,7 @@
 
 1. You'll need a new factory for comments.
   * Recall that comments are a nested resource, so the path looks like:
-    `/grumbles/:grumble_id/comments/:id`
+    `/grumbles/:grumble_id/comments`
   * Don't forget to load any new dependencies into your app.
 2. Since comments exist only within the 'show' view, you can add the comment
    functionality to the "grumble/show" controller. You don't need any new views,
