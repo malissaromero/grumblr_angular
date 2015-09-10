@@ -1,9 +1,9 @@
 <grumble-show></grumble-show>
 <ul>
-  <li data-ng-repeat="comment in vm.comments">
+  <li data-ng-repeat="comment in grumble.comments">
     <comment-show data-comment="comment"></comment-show>
   </li>
   <li>
-    <comment-save data-grumble="vm.grumble"></comment-save>
+    <comment-save data-grumble="grumble"></comment-save>
   </li>
 </ul>

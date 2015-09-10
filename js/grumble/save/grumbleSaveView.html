@@ -10,10 +10,10 @@
     <input type="text" data-ng-model="grumble.photoUrl">
     <span data-ng-if="grumble.$id">
       <a data-ng-href="/#/grumbles/{{grumble.$id}}">&larr; Back</a>
-      <button class="new" data-ng-click="grumble.update()">Save</button>
+      <button class="new" data-ng-click="grumble.$update()">Save</button>
     </span>
     <span data-ng-if="!grumble.$id">
-      <button class="new" data-ng-click="grumble.create()">Create</button>
+      <button class="new" data-ng-click="grumble.$create()">Create</button>
     </span>
   </form>
 </div>

@@ -8,6 +8,7 @@
     var data = $firebaseArray(connection);
     return {
       data: data,
+      array: $firebaseArray,
       new: function(id, methods){
         var obj = $firebaseObject.$extend(methods);
         if(id) return new obj(connection.child(id));
