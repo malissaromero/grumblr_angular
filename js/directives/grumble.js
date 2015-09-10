@@ -16,6 +16,7 @@
             $location.path("/grumbles")
           });
         }
+        scope.poo = "foo"
         scope.createComment = function(comment){
           var self = this
           Comment.save({grumbleId: $routeParams.id}, comment, function(comment){

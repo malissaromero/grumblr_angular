@@ -7,6 +7,7 @@
     'grumbleControllers',
     'grumbleRouter',
     'grumbleServices',
-    'grumbleDirectives'
+    'grumbleDirectives',
+    'commentDirectives'
   ]);
 })()
