@@ -76,6 +76,10 @@ Here are a few things you might try for Bonus:
 
 ## Day 3 - Firebase
 
+You may see the contents of wdidc.firebaseio.com updated in real-time here:
+
+http://ga-dc.github.io/wdidc_firebaseio/
+
 ### In-Class Starter Code
 
     $ git checkout -b templating-and-routing-with-comments origin/templating-and-routing-with-comments
