@@ -15,6 +15,15 @@
 
     $ git checkout -b controllers-and-directives origin/controllers-and-directives
 
+For homework tonight, please add CRUD functionality for comments to this application.
+
+Start by adding some seed data to the grumbles controller: https://github.com/ga-dc/grumblr_angular/blob/controllers-and-directives/js/controllers/grumbles.js#L4
+
+Then display the comments on the page using `ng-repeat`
+
+Allow the user to toggle a new and edit form for comments. When the user submits the form, add or remove the comment from `this.grumbles`
+in the controller.
+
 ### Homework Solution
 
     $ git checkout -b controllers-and-directives-with-comments origin/controllers-and-directives-with-comments
@@ -39,6 +48,29 @@ Using the angular router requires a local server using http (not the `file://` p
 ### Homework Starter Code
 
     $ git checkout -b templating-and-routing origin/templating-and-routing
+
+For homework tonight, please add 'Create', 'Read', and 'Delete' functionality
+for comments.
+
+* As a user, when I'm looking at a single grumble, I want to see the list of
+comments sorted by date (most recent at the bottom) so I can see what others
+have to say.
+* As a user, I want to add a comment when I'm looking at a single grumble, so
+I can share my thoughts with the world.
+* As a user, I want to delete any comment, so I can remove things I didn't mean
+to say, and to remove comments I think are dumb.
+
+This is a tricky homework, but if you want, we've provided [some hints](hw_hints.md).
+
+#### Bonus
+
+Here are a few things you might try for Bonus:
+
+* Create separate controllers for comments, rather than adding to the Grubmle
+  show controller.
+* Allow a user to sort comments by clicking e.g. different links above the list,
+  or a select box.
+* Add edit/update functionality for comments.
 
 ### Homework Solution
 
