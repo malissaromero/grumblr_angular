@@ -80,6 +80,8 @@ You may see the contents of wdidc.firebaseio.com updated in real-time here:
 
 http://ga-dc.github.io/wdidc_firebaseio/
 
+...or in the included `firebase.html` file.
+
 ### In-Class Starter Code
 
     $ git checkout -b templating-and-routing-with-comments origin/templating-and-routing-with-comments
