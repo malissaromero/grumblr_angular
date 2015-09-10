@@ -10,19 +10,13 @@
         controllerAs: 'grumblesCtrl'
       }).
       when("/grumbles/new", {
-        templateUrl: 'views/grumbles/new.html',
-        controller: 'newGrumbleController',
-        controllerAs: 'newGrumbleCtrl'
+        templateUrl: 'views/grumbles/new.html'
       }).
       when("/grumbles/:id", {
-        templateUrl: 'views/grumbles/show.html',
-        controller: 'grumbleController',
-        controllerAs: 'grumbleCtrl'
+        templateUrl: 'views/grumbles/show.html'
       }).
       when("/grumbles/:id/edit", {
-        templateUrl: 'views/grumbles/edit.html',
-        controller: 'editGrumbleController',
-        controllerAs: 'grumbleCtrl'
+        templateUrl: 'views/grumbles/edit.html'
       }).
       otherwise({
         redirectTo: "/grumbles"
