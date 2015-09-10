@@ -4,7 +4,7 @@
     .factory('$firebase', ['$firebaseObject', '$firebaseArray', $firebase]);
 
   function $firebase($firebaseObject, $firebaseArray){
-    var connection = new Firebase('https://amber-torch-5834.firebaseio.com/');
+    var connection = new Firebase(firebaseURL);
     var data = $firebaseArray(connection);
     return {
       data: data,
