@@ -5,7 +5,6 @@
   .module('grumblr', [
     'ngRoute',
     'firebase',
-    'ngResource'
   ])
   .config([
     '$routeProvider',
