@@ -72,11 +72,9 @@ Here are a few things you might try for Bonus:
   or a select box.
 * Add edit/update functionality for comments.
 
-### Homework Solution
+---
 
-    $ git checkout -b templating-and-routing-with-comments origin/templating-and-routing-with-comments
-
-## Day 3 - Firebase and Custom Directives
+## Day 3 - Firebase
 
 ### In-Class Starter Code
 
@@ -84,8 +82,24 @@ Here are a few things you might try for Bonus:
 
 ### In-Class Solution
 
-    $ git checkout -b firebase-and-directives origin/firebase-and-directives
+    $ git checkout -b firebase origin/firebase
+
+---
+
+## Day 3 - Custom Directives
+
+### In-Class Starter Code
+
+    $ git checkout -b templating-and-routing-with-comments origin/templating-and-routing-with-comments
+
+### In-Class Solution
+
+    $ git checkout -b custom-directives origin/custom-directives
 
 ### Homework Starter Code
 
-    $ git checkout -b firebase-and-directives origin/firebase-and-directives
+    $ git checkout -b custom-directives origin/custom-directives-reused
+
+### Homework Solution
+
+    $ git checkout -b custom-directives-with-comments origin/custom-directives-reused-with-comments
