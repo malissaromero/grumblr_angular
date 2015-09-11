@@ -6,4 +6,10 @@
       update: {method:'PUT'}
     });
   }]);
+
+  grumbleServices.factory('Comment', ['$resource', function($resource) {
+    return $resource('http://grumblr.wdidc.org/grumbles/:grumbleId/comments/:id', {}, {
+      update: {method:'PUT'}
+    });
+  }]);
 })();
